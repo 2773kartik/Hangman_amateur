@@ -40,8 +40,8 @@ HANGMAN_ASCII = ['''
    / \  |
        ###''']
 
-responses = responses = requests.get("https://api.dictionaryapi.dev/api/v2/entries/en/ksnlksjsfkna")
-
+responses = requests.get("https://api.dictionaryapi.dev/api/v2/entries/en/ksnlksjsfkna")
+# Rubbish word to test
 while(responses.status_code != 200):
     response = requests.get("https://random-word-api.herokuapp.com/word?number=1&swear=0")
     l = response.json()[0]    
